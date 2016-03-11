@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Starbucks Loator</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+ 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+ 	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http:////code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <style>
+    div#container{}
+    div#header {background-color:#99bbbb;}
+    div#menu {background-color:#ffff99;}
+    div#map {height:85%;width:85%;float:right;}
+    div#statistic {height:85%;width:85%;float:right;}
+    div#content {float:left;}
+    div#footer {background-color:#99bbbb;clear:both;text-align:center;}
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+  </style>
+</head>
+<body>
+  <div id="container">
+  	<div id="header"><h1>Starbucks Loator</h1></div>
+    <nav>
+      <div id="menu">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation"><a href="WFS_clustermap.htm" aria-controls="Cluster Map" role="tab" data-toggle="tab">Overview</a></li>
+          <li role="presentation"><a href="search_popup_cluster.htm" aria-controls="Cluster Map" role="tab" data-toggle="tab">Search</a></li>
+          <li role="presentation"><a href="googlemaps.htm" aria-controls="Google Map" role="tab" data-toggle="tab">Google Map</a></li>
+          <li role="presentation"><a href="choropleth-popdensity.htm" aria-controls="Google Map" role="tab" data-toggle="tab">Choropleth Map</a></li>
+          <li role="presentation" class="active"><a href="statistic1.htm" aria-controls="Google Map" role="tab" data-toggle="tab">Ownership Type</a></li>
+            <li role="presentation"><a href="statistic2.htm" aria-controls="Google Map" role="tab" data-toggle="tab">Latitude Histogram</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="statistic">
+
+	<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1oNnSaMd2-EGxJgOl3IPnZTe0ZMaLqEM5N_yWgMvZbCc/pubchart?oid=2117988222&amp;format=interactive"></iframe>
+	<IMG src="images/image (2).png" alt="image" style="width:600px;height:600px;">
+
+    </div>
+    <div id="content", center>
+	<P></P>
+	<IMG src="images/starbucks-coffee.jpg" alt="starbucks" style="width:200px;height:200px;">
+	<P>___________________________</P>
+	<P></P>
+	<IMG src="images/image.png" alt="image" style="width:180px;height:180px;">
+	<P></P>
+    </div>
+    <div id="footer"><h3><small>Jiao Ma &nbsp &nbsp GGS 692 Project</h3></small></div>
+
+
+
+  </div>
+</body>
