@@ -19,6 +19,7 @@
  	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http:////code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <style>
     div#container{}
     div#header {background-color:#99bbbb;}
@@ -84,7 +85,7 @@
     		    layers: [Thunderforest_Landscape]
     		});
 
-    		var owsrootUrl = 'http://localhost:8080/geoserver/test/ows';
+    		var owsrootUrl = 'https://services5.arcgis.com/qcRPZLCjjoC6rxgQ/arcgis/rest/services/All1/FeatureServer/0/query?where=State%3D%27NH%27&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=&units=esriSRUnit_Meter&outFields=*&returnGeometry=true&multipatchOption=&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&quantizationParameters=&f=pgeojson&token=';
 
     		var coolPlaces = new L.markerClusterGroup();
     		var defaultParameters = {
@@ -98,7 +99,8 @@
     		};
 
     		var parameters = L.Util.extend(defaultParameters);
-    		var URL = owsrootUrl + L.Util.getParamString(parameters);
+    		//var URL = owsrootUrl + L.Util.getParamString(parameters);
+        var URL = owsrootUrl;
 
     		var WFSLayer = null;
     		$.ajax({
